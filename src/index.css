@@ -1,0 +1,11 @@
+@import './global.css';
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  font-family: var(--font-family-normal);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+}

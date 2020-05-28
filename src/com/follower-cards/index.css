@@ -1,0 +1,20 @@
+@import '../../global.css';
+
+.fm-follower-cards {
+  padding-top: 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 600px) {
+  .fm-follower-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 800px) {
+  .fm-follower-cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

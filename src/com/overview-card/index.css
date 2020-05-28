@@ -1,0 +1,72 @@
+@import '../../global.css';
+
+.fm-overview-card {
+  padding: 24px;
+  background-color: var(--color-card-bg);
+  transition: var(--time-transition);
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  grid-template-areas: 'title icon' 'count percent';
+}
+
+.fm-overview-card:hover {
+  background-color: var(--color-card-bg-hover);
+  cursor: pointer;
+}
+
+.fm-overview-card .fm-overview-card-title {
+  grid-area: title;
+  align-self: start;
+  justify-self: start;
+
+  font-weight: var(--font-weight-semibold);
+}
+
+.fm-overview-card img {
+  grid-area: icon;
+  align-self: start;
+  justify-self: end;
+}
+
+.fm-overview-card .fm-overview-card-count {
+  grid-area: count;
+  align-self: end;
+  justify-self: start;
+
+  font-weight: var(--font-weight-bold);
+  font-size: 2em;
+  color: var(--color-text-bright);
+}
+
+.fm-overview-card .fm-overview-card-percent {
+  grid-area: percent;
+  align-self: end;
+  justify-self: end;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.fm-overview-card .fm-overview-card-percent img {
+  display: block;
+  margin-right: 4px;
+  margin-top: 5px;
+}
+
+.fm-overview-card .fm-overview-card-percent span {
+  font-size: 0.9em;
+  font-weight: var(--font-weight-semibold);
+}
+
+.fm-overview-card .fm-overview-card-percent span.loss {
+  color: var(--color-bright-red);
+}
+
+.fm-overview-card .fm-overview-card-percent span.gain {
+  color: var(--color-lime-green);
+}

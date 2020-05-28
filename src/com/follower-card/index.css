@@ -1,0 +1,100 @@
+@import '../../global.css';
+
+.fm-follower-card {
+  width: 100%;
+  background-color: var(--color-card-bg);
+  border-top: 8px solid var(--color-card-bg);
+  border-radius: 8px;
+  text-align: center;
+  transition: var(--time-transition);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fm-follower-card:hover {
+  background-color: var(--color-card-bg-hover);
+  cursor: pointer;
+}
+
+.fm-follower-card#facebook {
+  border-top-color: var(--color-facebook-blue);
+}
+
+.fm-follower-card#twitter {
+  border-top-color: var(--color-twitter-blue);
+}
+
+.fm-follower-card#youtube {
+  border-top-color: var(--color-youtube-red);
+}
+
+.fm-follower-card#instagram {
+  border-top: none;
+  background-image: linear-gradient(
+    to right,
+    var(--color-instagram-gradient-start),
+    var(--color-instagram-gradient-end)
+  );
+  background-position: top;
+  background-size: 100% 8px;
+  background-repeat: no-repeat;
+}
+
+.fm-follower-card .fm-follower-handle {
+  padding: 32px 0px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.fm-follower-card#instagram .fm-follower-handle {
+  padding: 40px 0px 32px;
+}
+
+.fm-follower-card .fm-follower-handle img {
+  display: block;
+  margin-right: 8px;
+}
+
+.fm-follower-card .fm-follower-handle p {
+  font-weight: var(--font-weight-bold);
+}
+
+.fm-follower-card .fm-follower-count h2 {
+  font-size: 4em;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-bright);
+}
+
+.fm-follower-card .fm-follower-count p {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-size: 0.9em;
+}
+
+.fm-follower-card .fm-follower-change {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fm-follower-card .fm-follower-change img {
+  display: block;
+  margin-right: 4px;
+}
+
+.fm-follower-card .fm-follower-change p {
+  padding: 24px 0px;
+  font-size: 0.9em;
+  font-weight: var(--font-weight-semibold);
+}
+
+.fm-follower-card .fm-follower-change p.loss {
+  color: var(--color-bright-red);
+}
+
+.fm-follower-card .fm-follower-change p.gain {
+  color: var(--color-lime-green);
+}
