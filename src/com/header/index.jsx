@@ -24,7 +24,7 @@ const Header = ({
         aria-label="Toggle Dark Mode"
         onClick={onToggleDarkModeClicked}
       >
-        <div className="fm-button-notch"></div>
+        <span className="fm-button-notch"></span>
       </button>
     </div>
   </header>

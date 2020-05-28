@@ -46,6 +46,7 @@ header .fm-header-dark-mode-toggle button:hover {
 }
 
 header .fm-header-dark-mode-toggle button .fm-button-notch {
+  display: block;
   position: relative;
   width: 20px;
   height: 20px;
